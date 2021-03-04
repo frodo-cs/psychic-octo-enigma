@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c970134129c95ed46b989ee350c003d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batteryCount: 100
+  batteryCount: 0
   holder: {fileID: 2232322240480965208}
   fl: {fileID: 4496108223237153080, guid: f441bb23b3f256e499c78faebf039b7a, type: 3}
   flashlight: {fileID: 0}
@@ -2499,7 +2499,7 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0cb07277ecdcb6547ad06f13b33b4736, type: 2}
-  - {fileID: 2684187376815357568, guid: 85eb0675c6581ca4a9ec6425141f8804, type: 3}
+  - {fileID: 2100000, guid: 5605e5920a541bf408757aac3099af95, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

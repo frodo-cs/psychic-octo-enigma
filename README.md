@@ -2,9 +2,7 @@
  
 ## Credits  
 
-List of the creators of the assets used in this project. The assets can be found in the Unity Asset Store, Freesound, Sketchfab, Free Music Archive and Turbosquid. 
-
-### 3D Models
+### 3D Models - Unity Asset Store, Sketchfab and Turbosquid  
 HGHGK  
 media_mas  
 Harold.Llanos  
@@ -15,20 +13,28 @@ Broken Vector
 Distant Lands  
 EmacEArt  
 Timothy Porter  
-Playtek  
-tadeus  
+Playtek    
+tadeus    
 asoliddev  
-  
-### Music  
-Dee Yan-Key  
-Latché Swing  
-Scott Joplin  
-  
-### SFX  
-Lasdimot  
-InspectorJ  
-morganpurkis  
+Raphael C  
+Vladimir E   
+    
+### Music - Free Music Archive  
+Dee Yan-Key    
+Latché Swing   
+Scott Joplin    
+   
+### Sounds - Freesound.org  
+Lasdimot   
+InspectorJ   
+morganpurkis   
 dkiller2204  
-
-### Ambient
-Headphaze
+HorrroAudio  
+jorijhoofd  
+MoiraM  
+Sea Fury  
+Tissman  
+Unaxete  
+Yudena  
+Headphaze  
+steaq

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Flashlight : MonoBehaviour {
@@ -8,7 +7,7 @@ public class Flashlight : MonoBehaviour {
     public float currentCharge = 30;
     private Light lightbulb;
     private float batteryLoss = 1;
-    private float intensity = 1.5f;
+    private readonly float intensity = 1.5f;
     public bool dying = false;
 
     private void Start() {
@@ -38,14 +37,7 @@ public class Flashlight : MonoBehaviour {
                     dying = false;
                     GameEvents.current.GameLostTrigger();
                 }
-            }
-            
-
-            /*
-            int bat = (int)(batteryLife);
-            int v = bat.Map(0, batteryCharge, 0, 150);
-            lightbulb.intensity = v/150.0f;
-            */
+            }         
         }
     }
 
@@ -58,10 +50,11 @@ public class Flashlight : MonoBehaviour {
         currentCharge = maxCharge;
         dying = false;
         lightbulb.intensity = intensity;
+        lightbulb.enabled = true;
     }
 
     public void ChangeLoss(bool b) {
-        batteryLoss = b ? 2f : 1f;
+        batteryLoss = b ? 4f : 1f;
     }
 
     IEnumerator Flickering() {

@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Menu : MonoBehaviour {
 
     [SerializeField] GameObject still;
-    [SerializeField] GameObject text;
+    [SerializeField] GameObject credits;
+    [SerializeField] GameObject controls;
 
-    private bool credits = false;
+    private bool credEnabled = false;
+    private bool contEnabled = false;
 
     private void Start() {
         Time.timeScale = 1f;
@@ -21,15 +20,18 @@ public class Menu : MonoBehaviour {
     }
 
     public void ViewCredits() {
-        credits = !credits;
+        credEnabled = !credEnabled;
+        contEnabled = false;
     }
 
-    public void ExitGame() {
-        Application.Quit();
+    public void ViewControls() {
+        contEnabled = !contEnabled;
+        credEnabled = false;
     }
 
     private void Update() {
-        still.SetActive(!credits);
-        text.SetActive(credits);
+        still.SetActive(!credEnabled && !contEnabled);
+        credits.SetActive(credEnabled && !contEnabled);
+        controls.SetActive(contEnabled && !credEnabled);
     }
 }
