@@ -22,7 +22,7 @@ public class EndMenu : MonoBehaviour {
 
     private void FinishGame(bool state) {
         Cursor.visible = true;
-        text.text = state ? "Won" : "Lost";
+        text.text = state ? "Victory" : "Game Over";
         text.color = state ? Color.green : Color.red;
         GUI.SetActive(false);
         Time.timeScale = 0f;

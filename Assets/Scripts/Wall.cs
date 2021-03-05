@@ -5,7 +5,6 @@ public class Wall : MonoBehaviour {
         Player player = collision.GetComponent<Player>();
         if (player) {
             player.InArea(true);
-            Debug.Log("Player in area");
         }
     }
 
@@ -13,7 +12,6 @@ public class Wall : MonoBehaviour {
         Player player = collision.GetComponent<Player>();
         if (player) {
             player.InArea(false);
-            Debug.Log("Player out area");
         }
     }
 }
